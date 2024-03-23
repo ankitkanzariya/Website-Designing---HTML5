@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react</title>
+    <style>
+        .q{
+            background-color: rgb(255, 157, 30);
+            padding: 10px;
+            font-size: 28px;
+            margin: 1rem;
+        }
+        .a{
+           background-color: rgb(209, 209, 209);
+            font-size: 18px;
+            padding: 20px;
+            margin: 0;
+        }
+        li{
+            background-color: cornflowerblue;
+            margin: 0 4rem;
+            padding: 5px;
+        }
+        
+        span{
+            background-color: black;
+            margin: 8px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="q">Are the HTML tags and elements the same thing?</p>
+  
+    <p class="a"><span>Ans:</span>HTML Tags: These are the written instructions that define the element. They come in pairs - a start tag and an end tag. The start tag usually indicates the element type, and the end tag signifies the end of that element's content. For instance, <br> HTML Elements: These are the parts of the content you see on a webpage created by the tags. An element encompasses the start tag, its content, and the corresponding end tag. So, everything between <b> and </b> is considered the heading element. </p>
+
+<p class="q">What are tags and attributes in HTML?</p>
+<p class="a"><span>Ans:</span>HTML relies on tags and attributes to structure and define the content of webpages. Here's a breakdown of their roles: <br> <ol><li>HTML TAGS</li><ul><li>Act as instructions for web browsers, indicating the type of content.
+    </li>
+<li>Appear in pairs: an opening tag (<tag>) and a closing tag (</tag>).
+    </li>
+<li>Define the element they surround, which can be text, images, links, and more.</li></ul><li>HTML attributes</li><UL><li>Provide additional information or modify the behavior of an HTML element.
+    </li><li>Reside within the opening tag (<tag attribute="value">).
+       </li>
+    <li> Composed of an attribute name and a value enclosed in quotes (either single or double).</li></UL></ol>
+ </p>
+
+ <p class="q">What are void elements in HTML?</p>
+ <p class="a"><span>Ans:</span>Void elements in HTML are a special category of elements with distinct characteristics: <li>Single Tag: Unlike most HTML elements that come in opening and closing tag pairs (e.g., <pre><h1>and</h1></pre> ), void elements only have a single opening tag. They do not require a closing tag.</li> <li>No Content: Void elements represent content that is inherently self-contained and doesn't hold any additional content within them. For instance, an <pre><hr></pre>HR tag represents a horizontal line, and it doesn't make sense to nest other elements inside it.</li> <li>Attributes Allowed: While void elements don't have internal content, they can still have attributes associated with them. These attributes provide additional information about the element itself. For example, an <img> tag (image) can have an src attribute to specify the image source.</li> </p>
+
+ <p class="q">What are HTML Entities?</p>
+<p class="a"><span>ANS:</span>HTML entities act as a way to display characters that  hold special meaning in HTML or aren't present on a standard keyboard.  They come into play in two scenarios: <ol><li>Reserved Characters: Certain characters, like < (less than) and > (greater than), have a predefined function within HTML code and are used to create tags. If you want to literally display these symbols on your webpage's content, you can't simply type them because the browser might interpret them as part of the HTML structure. This is where entities come in.  They provide a special code to represent these reserved characters for display.
+
+</li> <li>Missing Characters: Some symbols or characters might not be available on your keyboard, like © (copyright) or €, (Euro).  Entities offer a way to include these characters in your HTML content.</li></ol> There are two ways to define an HTML entity: <ol><li>Entity Name: This uses a predefined name followed by a semicolon ( ; ). For example, &lt; represents the less than symbol (<), and &copy; represents the copyright symbol (©).
+
+</li>
+<li>Entity Number: This format uses a numeric code prefixed with &# and followed by a semicolon ( ; ).  For example, &#60; represents the less than symbol (<), and &#169; represents the copyright symbol (©)</li></ol>  </p>
+    
+<p class="q">What are different types of lists in HTML?</p>
+<p class="a"><span>Ans</span>In html lists are main two types 1>ORDER LIST(OL) 2> UNORDER LIST(UL) 3>Definition Lists (dl):
+<pre><ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+<ul><li>item1</li>
+<li>item1</li>
+<li>item1</li></ul>
+<dl>
+    <dt>Term 1</dt>
+    <dd>Definition of Term 1</dd>
+    <dt>Term 2</dt>
+    <dd>Definition of Term 2</dd>
+</dl>
+</pre> </p>
+
+<p class="q">What is the ‘class’ attribute in HTML?</p>
+<p class="a"><span>Ans:</span>The class attribute in HTML is a powerful tool for associating CSS styling and JavaScript functionality with specific HTML elements. It acts like a label you can assign to elements.<br>
+<b>Here's a breakdown of its key functions:</b><br><b>PURPOSE:</b><li>Connects Elements to Styles: The primary function of the class attribute is to link HTML elements to CSS styles. By assigning a class name to one or more elements, you can target them in your CSS code and define specific styles for those elements. This allows you to create reusable styles and maintain consistency across your webpage.
+
+</li>
+<li>JavaScript Manipulation: The class attribute also plays a role in JavaScript.  JavaScript code can target elements based on their class names. This enables you to dynamically modify the appearance or behavior of elements based on user interactions or other conditions.</li></p>
+
+<p class="q">What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?</p>
+<p class="a"><span>ANS:</span>The id and class attributes in HTML both serve the purpose of connecting elements with CSS styles or JavaScript functionality, but they differ in how they achieve this connection:
+<li>id Attribute: Stands for "identification." An id attribute assigns a unique identifier to a single element within a webpage. There can only be one element with a specific id value on a page. This makes it ideal for targeting specific elements that need distinct styling or functionality.</li>
+<li>class Attribute: Stands for "classification." A class attribute can be assigned to multiple elements on a webpage. It allows you to group elements that share similar characteristics or styling requirements. This promotes code reusability and efficient styling.</li></p>
+
+<p class="q">What are the various formatting tags in HTML?</p>
+<p class="a"><span>ANS:</span>
+    HTML offers a variety of formatting tags to enhance the visual presentation and structure of your webpage content. Here's a breakdown of some common formatting tags:  <ol><li>Bold (<b></b> and <strong></strong>):** Both tags make text bold. However, there's a subtle difference. <b></b> emphasizes the importance of the text visually, while <strong> indicates strong importance in the document's context.
+
+       </li>
+    <li> Italic (<i> and </i>): Similar to bold, <i></i> slants text for emphasis, while <em> signifies stressed importance within the content.
+        
+</li>
+    <li>        Underline (<u></u>): Applies an underline to the text content.  Note that underlining is not a preferred way to highlight text for accessibility reasons. Semantic alternatives like <strong> </strong>are recommended.
+       </li>
+    <li> 
+        Subscript (<sub></sub>) and Superscript (<sup></sup>): These tags format text either below (subscript) or above (superscript) the baseline. They are commonly used for scientific notation, mathematical formulas, or referencing footnotes.
+       </li>
+    <li> 
+        Strikethrough (<s></s>): Presents text with a strikethrough line, often used to indicate removed or invalid content.
+        
+        </li>
+    <li>Sample (<code></code>): Renders text in a monospaced font, typically used for displaying code samples or text meant to look like it would in a typewriter.
+        
+       </li>
+    <li> Emphasis (<em></em>): While similar to <i>, it emphasizes the text's importance within the context.
+        
+       </li>
+    <li> Deleted Text (<del></del>): Displays text with a strikethrough, often used to indicate content that has been deleted from the document.
+        
+       </li><li> Inserted Text (<ins></ins>): Typically used with editing tools, it underlines text to show newly inserted content.</li></ol> </p>
+
+<p class="q">How is Cell Padding different from Cell Spacing?</p>
+<p class="a"><span>ANS:</span>Cell padding and cell spacing are both related to the space between elements in an HTML table, but they target different areas: <ol><li>cell padding</li><ul><li>Defines the space between the cell's content and its border.  In simpler terms, it controls the margin within a cell, adding space between the text or element and the cell's edge.
+
+    </li>
+<li>Increases the overall size of the cell, including the paddings.
+    
+   </li>
+<li> Primarily used to visually separate the content from the table's border and potentially improve readability.
+    
+ </li>
+<li></li></ul>
+<li>cell spacing</li><ul><li>Defines the space between the borders of two adjacent cells. It sets the amount of empty space separating neighboring cells.</li>
+<li>Doesn't affect the individual cell size, only the space between them.
+
+</li>
+<li>Primarily used to control the layout and spacing between table cells for a more organized appearance</li>
+<li>ontrolled using the cellspacing attribute in the <tabel> tag.  Values are specified in pixels (px) or percentages (%)</li></ul></ol> </p>
+
+<p class="q">What is the difference between a block-level element and an inline element?</p>
+<p class="a"><span>ANS:</span>Block-level elements and inline elements are fundamental building blocks for structuring content in HTML. They differ in their behavior and how they interact with surrounding elements on a webpage. 
+<ol><li>Block-level elements</li><ul><li>New lines: Always start on a new </li>
+<li>line before and after the element.
+  </li>
+<li>  Width: Expands horizontally to fill the available space from left to right.
+   </li>
+<li> Margins: Can have top and bottom margins by default.
+    Examples: <p></p>  <div></div>  <h1></h1>  <ul></ul> <img> </(depending on context)</li></ul>
+<li>Inline elements</li><ul>
+<li>New lines: Don't start a new line. They flow horizontally in line with other inline elements.
+    </li>
+<li>Width: Only as wide as the content itself.
+   </li>
+<li> Margins: Don't have top and bottom margins by default.</li></ul></ol> </p>
+
+<p class="q">How to create a Hyperlink in HTML?</p>
+<p class="a"><span>ANS:</span>Hyperlinks, also known as anchors, are essential for creating navigational elements within web pages. They allow users to jump to different sections of the same webpage or navigate to entirely different websites. Here's a breakdown of how to create hyperlinks in HTML:  <ol><li>The Anchor Tag <a>:
+
+    The foundation of hyperlinks in HTML is the anchor tag, denoted by <a> and </a>. This tag defines the clickable area of the link.</li>
+<li>The href Attribute:
+
+    The href attribute is the cornerstone of hyperlinks. It specifies the destination URL where the user will be directed upon clicking the link. Here's the basic syntax:</li>
+<li>Descriptive Anchor Text:
+
+    It's crucial to use descriptive text for your anchor tags. This helps users understand where the link leads and improves accessibility for screen readers.</li>
+<li>Targeting Links:
+
+    By default, links open in the same browser window. You can use the target attribute to specify how the link behaves:</li><ul><li>_blank: Opens the linked page in a new browser tab or window.
+       </li>
+    <li> _self: Opens the link in the current frame (default behavior).
+        </li>
+    <li>_parent: Opens the link in the parent frame.
+       </li>
+    <li> _top: Opens the link in the full body of the window.</li></ul>
+<li> Additional Attributes:
+
+    There are other attributes you can use with anchor tags, such as:</li><ul><li>title: Provides additional information about the link that appears as a tooltip when hovering over the link.</li></ul></ol></p>
+
+<p class="q">What is the use of an iframe tag?</p>
+<p class="a"><span>ANS:</span>The iframe tag in HTML allows you to embed another HTML document within your current webpage. It essentially creates a mini window that displays content from a separate source. Here are some of the common use cases for iframes:  <li>Embedding External Content: You can embed elements like videos from YouTube, maps, social media feeds, or even entire web pages from other websites into your webpage using iframes. This can be useful for incorporating functionalities from external providers without having to code them yourself.
+
+   </li>
+<li> Adding Multimedia:  Iframes are a handy way to display multimedia content like YouTube videos, audio players, or interactive elements within your webpage. This can enhance the user experience and make your page more engaging.
+    
+   </li>
+<li> Content from Different Sources: If you have content hosted on a different domain or subdomain, you can leverage iframes to seamlessly integrate it into your main webpage.
+    
+  </li>
+<li>  Advertisements: Iframes are sometimes used to display advertisements on webpages. However, this practice can have security and user experience drawbacks, so it's important to use them cautiously.</li></p>
+
+<p class="q">What is the use of a span tag? Explain with example?</p>
+<p class="a"><span>ANS:</span>The span tag in HTML acts as a generic inline container for styling a specific portion of text or applying attributes to it. Unlike a block-level element like < d i v > , which creates a new line before and after, the span tag integrates seamlessly within a line of text. Here's a breakdown of its uses and an example:  <b>purpose of span tag</b> <li>Applying Styles with CSS: The primary use of the span tag is to group inline elements for styling purposes using CSS. By assigning a class or ID to the span tag, you can target that specific section of text with CSS rules and modify its appearance (font, color, background, etc.).
+
+   </li>
+<li> Adding Attributes: You can use the span tag to add specific attributes to a part of your text. For instance, you can use the lang attribute to denote a different language for a certain phrase within the text.</li> </p>
+
+<p class="q">How to insert a picture into a background image of a web page?</p>
+<p class="a"><span>ANS:</span>While you can't directly insert an image on top of another image as a background in HTML, there are a couple of workarounds to achieve a similar effect:   <li>1. Using Multiple Background Images with CSS:</li>
+    
+    <pre>body {
+        background-image: url("background.jpg"), url("image-on-top.png");
+        background-repeat: no-repeat; /* Ensures images don't repeat */
+        background-position: center; /* Positions images in center */
+      }
+      </pre>
+
+<li> Using HTML Elements with Z-Index:</li> <pre><div class="background-container"> </div>
+
+    
+    .background-container {
+      position: relative; /* Enables positioning of child elements */
+      height: 500px; /* Set height as needed */
+    }
+    
+    .top-image {
+      position: absolute; /* Positions the image on top of the container */
+      top: 100px; /* Adjusts the top position of the image */
+      left: 50%; /* Centers the image horizontally */
+      transform: translateX(-50%); /* Necessary for proper horizontal centering */
+      z-index: 1; /* Ensures the image is displayed on top */
+    }
+    </pre> </p> 
+
+    <p class="q">How are active links different from normal links?
+    </p>
+
+    <p class="a"><span>ANS:</span>Active links and normal links are two visual states of the same hyperlink in an HTML webpage. They provide users with information about how the link is currently being interacted with. Here's a breakdown of their key differences: <li> <span>normal link:</span> This is the default state of a hyperlink.
+    </li>
+   <li>   It typically appears underlined (often blue) and indicates a clickable element that leads to another webpage or resource.
+     </li>
+   <li>  Visually, it doesn't provide any specific indication of an ongoing interaction.</li>
+
+<li><span>active link</span> An active link represents the hyperlink when a user interacts with it in specific ways. This can include:</li>
+<li>Active links are usually displayed in a different color (often red) compared to normal links. This provides immediate feedback to the user that they are interacting with a clickable element.</li>
+<li>The active state is temporary. Once the user interaction ceases (clicks away, hovers away, or releases the mouse button), the link reverts to its normal state.</li> </p>
+
+<p class="q">• What are the different tags to separate sections of text?</p>
+<p class="a"><span>ANS:</span>Here's a breakdown of the different tags you can use to separate sections of text in HTML, along with their purposes and considerations: <ol><li>semantic tags[p,blockquote,h1..]</li>
+<li>non seantic tags[br,div..]</li></ol> </p>
+
+<p class="q">What is SVG?</p>
+<p class="a"><span>ANS:</span>SVG stands for Scalable Vector Graphics. It's a file format used to define two-dimensional vector graphics for the web. Unlike raster images (like JPEGs or PNGs) that use pixels, SVGs use mathematical paths to represent shapes and images. This makes them unique in several ways: [scalability,flexibility,text-integration,wider application]</p>
+
+<p class="q">What is difference between HTML and XHTML?</p>
+<p class="a"><span>ANS:</span><li>HTML: HTML is more lenient and forgiving in its syntax. Errors or missing elements might still be interpreted by browsers and display the content in a somewhat predictable way.
+   </li>
+<li> XHTML: XHTML is stricter and follows the rules of XML (Extensible Markup Language). It requires proper closing tags for all elements and uses lowercase for tag names and attributes. This stricter approach makes XHTML more future-proof and theoretically easier for machines to parse.</li>
+<br><span>purpose of use.</span>
+<li>HTML: HTML is the foundation and the current standard language for creating web pages. It's widely supported by all browsers and offers flexibility for developers.
+  </li>
+<li>  XHTML: XHTML was intended to be a stricter version of HTML that could be validated as XML. The goal was to improve data exchange and interoperability between different systems. However, XHTML never gained widespread adoption for web development.
+</li>
+</p>
+
+<p class="q">What are logical and physical tags in HTML?</p>
+<p class="a"><span>ANS:</span> Show drafts In HTML, there's a historical distinction between logical tags and physical tags, but it's less relevant in modern web development. Here's a breakdown <ol><li>logical tags</li><ul><li>These tags aimed to describe the meaning or purpose of the content they enclosed.
+    </li>
+<li>Examples include <b></b> (bold), <i></i> (italic), <u></u> (underline), and <font> (font face and size).
+    </li>
+<li>However, these tags offered limited control over the visual appearance, and browsers had some discretion in how they rendered them.</li></ul>
+<li>physical tags</li><ul><li> Physical tags provide more precise control over the look and feel of the content.
+</li>
+<li>These tags directly specify the visual presentation of the content.
+  </li>
+<li>  Examples include <strong></strong> (strong importance), <em></em> (emphasis), <del></del> (strikethrough), and modern CSS styling using classes or IDs.
+   </li></ul></ol> </p>
+
+   <h1>Module (CSS and CSS 3) -2</h1>
+
+   <p class="q">• What are the benefits of using CSS?</p>
+   <p class="a"><span>ANS:</span>CSS (Cascading Style Sheets) offers a multitude of benefits for web development, making it an essential tool for creating visually appealing, maintainable, and user-friendly websites. Here's a breakdown of some key advantages: <li>Separation of Concerns:</li>
+   <li>Improved Maintainability:</li>
+   <li>Faster Loading Times:</li>
+   <li>Enhanced Design and Layout:</li>
+   <li>Responsive Design:</li>
+   <li>Browser Compatibility:</li> </p>
+
+   <p class="q">• What are the new tags added in HTML5?</p>
+   <p class="a">HTML5 introduced a significant number of new tags compared to HTML4. These tags focus on enhancing the structure, semantics, and multimedia capabilities of web pages. Here's a glimpse into some of the commonly used ones: <ol><li>semanatic tags[header,nav,section,article,footer]</li>
+   <li>multimedia tags [audio,source,video,track] </li>
+   <li>form elements [input type="email,serch,url"..., datalist,progress,meter] </li>
+   <li>other new tags [figure,figcaption,canvas,datalis,sumarry..] </li></ol> </p>
+
+   <p class="q">How to embed audio and video in a webpage?</p>
+   <p class="a"><li>audio,video tag</li>
+   <li>iframe tag</li></p>
+
+   <audio controls>
+    <source src="./.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <video controls width="640" height="480">
+    <source src="" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+
+  <p class="q">Semantic element in HTML5?</p>
+  <p class="a"><span>ANS:</span>Semantic elements in HTML5 are those that describe the meaning and purpose of a content section, rather than just its presentation. They provide context and structure to your webpage, making it more understandable for both users and search engines. Here's a breakdown of their importance and some commonly used examples: 
+<b>common simantic elements [header,nav,footer,section,artical,aside,h1-h6] </b> </p>
+   
+<p class="q">Canvas and SVG tags</p>
+<p class="a"><span>ANS:</span>                                                          
+                                 </p>
+
+</body>
+</html>
